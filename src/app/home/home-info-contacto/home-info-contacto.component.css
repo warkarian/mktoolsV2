@@ -1,0 +1,120 @@
+.contenedor-info-empresa {
+  background: #F1F0EE;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.direccion, .telefono, .correo {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.direccion > span, .telefono > span, .correo > span {
+  font-size: 2em;
+  margin-right: 5px;
+  min-width: 33px;
+  text-align: center;
+}
+
+.correo > span {
+  font-size: 1.5em;
+}
+
+.direccion > p, .telefono > p, .correo > p {
+  max-width: 237px;
+  line-height: 16px;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.direccion {
+  margin-bottom: 15px;
+}
+
+.contenedor-redes-horarios {
+  display: flex;
+}
+
+.horarios > h5, .horarios >h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.horarios > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.horarios > h5, .redes-sociales > h5{
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.redes-iconos > span {
+  font-size: 2em;
+  margin-right: 5px;
+}
+
+.horarios > h6 {
+  font-size: 13px;
+  line-height: 14px;
+  margin-bottom: 0;
+}
+
+.fa-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#CE0031), to(#F70031));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+agm-map {
+  width: 100%;
+  height: 300px;
+}
+
+/*!*Small devices (landscape phones, 576px and up)*!*/
+@media (min-width: 576px) {
+
+}
+
+/*!*Medium devices (tablets, 768px and up)*!*/
+@media (min-width: 768px) {
+  .contenedor-info-empresa {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .contenido-info {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 5px 0 40px rgba(0,0,0, .3);
+    z-index: 10;
+  }
+
+  .contenido-mapa {
+    padding: 0;
+  }
+
+  agm-map {
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+  }
+}
+
+/*!*Large devices (desktops, 992px and up)*!*/
+@media (min-width: 992px) {
+
+
+}
+
+/*!*Extra large devices (large desktops, 1200px and up)*!*/
+@media (min-width: 1200px) {
+
+}
+

@@ -1,0 +1,55 @@
+.header-contenido {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.header-contenido > img {
+  width: 100%;
+  height: auto;
+}
+/* .carousel-indicators{
+  display: none;
+} */
+/* .carousel-control-next-icon {
+  background-image: url('../../../../assets/images/home/right-arrow.png');
+}
+.carousel-control-next {
+  right: 0%;
+  width: 5%;
+  opacity: 1;
+  top: 50%;
+}
+.carousel-control-prev-icon{
+  background-image: url('../../../../assets/images/home/left-arrow.png');
+}
+.carousel-control-prev{
+  left: 0%;
+  width: 5%;
+  opacity: 1;
+  top: 50%;
+} */
+.top{
+  padding-top: 52px
+}
+
+
+@media(min-width:320px){
+  .desktop{
+    display: none
+  }
+  .mobile{
+    display: block
+  }
+  
+}
+@media(min-width:768px){
+  .desktop{
+    display: block
+  }
+  .mobile{
+    display: none
+  }
+}
+
+

@@ -1,0 +1,260 @@
+div.banner-container {
+  position: relative;
+}
+
+div.banner-container > img {
+  width: 100%;
+  height: auto;
+}
+
+div.banner-title {
+  min-width: 26%;
+  height: 45%;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  top: 17%;
+  left: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+div.banner-title > h1 {
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+}
+
+div.contenido-categorias-display {
+  width: 80%;
+  margin-left: 20%;
+  /*background: orange;*/
+}
+
+div.display-header-container {
+  width: 100%;
+}
+
+div.display-header-container > img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  border: none;
+  margin-top: 20px;
+}
+
+div.card-img-top {
+  width: 100%;
+}
+
+div.card-img-top > img {
+  width: 100%;
+  height: auto;
+}
+
+div.card-body {
+  /*background: linear-gradient(to right, #472D91, #662D91 );*/
+  padding: 0;
+}
+
+h5.card-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+}
+
+
+
+/*Detalles*/
+
+.contenedor-detalle-producto, .loading {
+  padding-top: 52px;
+  height: calc(100vh - 52px);
+  display: flex;
+  justify-content: center;
+  align-items: center!important;
+  overflow-y: auto;
+}
+
+.loading {
+  align-items: center;
+}
+
+.loading > img {
+  height: 100px;
+}
+
+
+/* .contenedor-detalles {
+
+} */
+
+.contenido-detalles-producto {
+  padding: 20px 30px 0 20px;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-producto > img {
+  width: 100%;
+  height: auto;
+}
+
+.titulo-producto {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 20px 50px 20px 50px;
+  /*background: red;*/
+  border-bottom: 1px solid rgba(76,76,76,.5);
+}
+
+.titulo-producto:before {
+  content: '';
+  position: absolute;
+  left: 32px;
+  top: 29%;
+  height: 46%;
+  width: 5px;
+  background: red;
+}
+
+.titulo-producto > h2 {
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.descripcion-producto {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.descripcion-producto:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: 1px;
+  background: rgba(76,76,76,.5);
+}
+
+.descripcion-producto > pre {
+  margin: 0;
+  white-space: pre-wrap;
+  text-align: justify;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6a6a6a;
+}
+
+.incluye {
+
+  margin-top: 20px;
+}
+
+.incluye > ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+.incluye > ul > li {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.incluye > ul > li > span {
+  font-family: Lato, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #6a6a6a;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-impresion {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.impresion-material, .impresion-sistema {
+  margin-right: 20px;
+}
+
+.heading-h3 {
+  background: red;
+  min-width: 150px;
+  height: 28px;
+  margin-bottom: 10px;
+}
+
+.heading-h3 > h3{
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.ul-impresion > li{
+  font-family: "Open Sans", sans-serif;
+  color: #6a6a6a;
+}
+
+.medidas > ul > li{
+  text-align: center;
+}
+@media(min-width:320px){
+  div.contenido-categorias-display {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .mobile{
+    display: unset;
+  }
+  .desktop{
+    display: none;
+  }
+}
+@media(min-width:768px){
+  div.contenido-categorias-display {
+    width: 80%;
+    margin-left: 20%;
+  }
+  .mobile{
+    display: none;
+  }
+  .desktop{
+    display: unset;
+  }
+}

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+.card-img-top {
+  height: 100%;
+}
+.carousel-indicators > li{
+  display: none;
+}
+.carousel-control-next-icon {
+  background-image: url('./assets/images/home/right-arrow.png');
+}
+.carousel-control-next {
+  width: 5%;
+  opacity: 1;
+}
+.carousel-control-prev-icon{
+  background-image: url('./assets/images/home/left-arrow.png');
+}
+.carousel-control-prev{
+  width: 5%;
+  opacity: 1
+}
+.respo > img{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 25%;
+}
+.fa-facebook-square:before {
+  font-size: 32px;
+  color: red;
+}

@@ -1,0 +1,143 @@
+.contenedor-productos {
+  padding: 20px;
+  background: #F2F2F2;
+}
+
+.contenido-productos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.card {
+  background: transparent;
+  padding: 0 5px;
+  /*max-width: 480px;*/
+  cursor: pointer;
+  border-radius: 0;
+  border: 0!important;
+  /*margin-right: 2%;*/
+}
+
+
+
+.card-img-top {
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.card-img-top > img{
+  transition: .2s all;
+  /*max-height: 200px;*/
+  width: 100%;
+}
+
+.card-body {
+  height: 50px;
+  padding: 0;
+}
+
+.card-title {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 1px;
+  transition: .2s all;
+  line-height: 50px;
+  text-align: center;
+}
+
+.body-productos {
+  background: linear-gradient(#00C82A, #68C72B);
+}
+
+.body-servicios {
+  background: linear-gradient(#0182E0, #009EDB);
+}
+
+.body-portafolio {
+  background: linear-gradient(#4F2996, #752995);
+}
+
+/* Efectos CSS */
+.card:hover .card-img-top > img {
+  transform: scale(1.1);
+}
+
+.card:hover .card-body > .card-title {
+  letter-spacing: 5px;
+}
+
+.card:nth-child(1):hover > .body-productos {
+  box-shadow: 0 0 10px #00C82A;
+}
+
+.card:nth-child(2):hover > .body-servicios{
+  box-shadow: 0 0 10px #0182E0;
+}
+
+.card:nth-child(3):hover > .body-portafolio {
+  box-shadow: 0 0 10px #4F2996;
+}
+
+/* Visualizar imagen */
+.observar {
+  height: auto!important;
+  width: auto!important;
+}
+
+.visualizar-imagen {
+  cursor: pointer;
+  transition: .2s all;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(49,49,49,.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media(min-width:320px){
+  .card-title{
+    font-size: 13px;
+    line-height: 30px
+  }
+  .card-body{
+    height: 30px;
+  }
+  .desktop{
+    display: none
+  }
+  .mobile{
+    display: block
+  }
+}
+@media(min-width:600px){
+  .card-title{
+    font-size: 13px;
+  }
+}
+@media(min-width:768px){
+  .card-title{
+    font-size: 18px;
+    line-height: 50px
+  }
+  .card-body{
+    height: 50px;
+  }
+  .desktop{
+    display: flex
+  }
+  .mobile{
+    display: none
+  }
+}

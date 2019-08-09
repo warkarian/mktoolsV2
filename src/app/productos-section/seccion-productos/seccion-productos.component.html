@@ -1,0 +1,42 @@
+  <div class="container-fluid">
+  <div class="contenedor-general">
+    <div class="side-nav-contenedor">
+      <div class="side-nav-contenido">
+        <button (click)="hide = !hide;" class="dropdown-btn" #botonNav>
+          <span class="drop" [ngClass]="{'span-affected': hide}" class="fa fa-caret-down"></span> DISPLAY
+        </button>
+        <div class="overflow-me">
+          <div class="dropdown-container" [ngClass]="{'dropdown-container-affected': hide}">
+            <!-- <a *ngFor="let categoria of categorias"
+               [routerLink]="['/productos/displays/', (categoria.nombre.replace('/[^a-zA-Z ]/g', '').split(' ').join('-') | lowercase) , categoria._id]"
+            >{{categoria.nombre}}</a> -->
+            <a [routerLink]="['./displays']">Todos</a>
+            <a [routerLink]="['/productos/banners']">Banners</a>
+            <a [routerLink]="['/productos/flexo-stands']">Flexo Stands</a>
+            <a [routerLink]="['/productos/frames']">Frames</a>
+            <a [routerLink]="['/productos/flags']">Flags</a>
+            <a [routerLink]="['/productos/mochila']">Mochilas Billboard</a>
+            <a [routerLink]="['/productos/roll-up']">Roll Up</a>
+          </div>
+        </div>
+        <!-- <a [routerLink]="['/productos/modulos']"
+           [ngStyle]="(degradado && degradado.seccion === 'modulos') ? {'color': 'white', 'background' : 'linear-gradient(to right, ' + degradado.colorUno + ', ' + degradado.colorDos + ' )'} : {}"
+        >MÓDULOS</a> -->
+        <a [routerLink]="['/productos/modulos']">MÓDULOS</a>
+        <!-- <a
+          [routerLink]="['/productos/portamenus']"
+          [ngStyle]="(degradado && degradado.seccion === 'portamenus') ? {'color': 'white', 'background' : 'linear-gradient(to right, ' + degradado.colorUno + ', ' + degradado.colorDos + ' )'} : {}"
+        >PORTAMENUS</a> -->
+        <a [routerLink]="['/productos/portamenus']">PORTAMENUS</a>
+        <a>TAPETES</a>
+        <a>PROMOCIONALES</a>
+        <a>SEÑALIZACIÓN</a>
+      </div>
+
+    </div>
+
+    <router-outlet></router-outlet>
+
+
+  </div>
+</div>

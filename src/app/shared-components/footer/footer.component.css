@@ -1,0 +1,14 @@
+.contenedor-footer {
+  height: 32px;
+  width: 100%;
+  background: #FF0030;
+
+}
+
+.contenido-footer > p{
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  color: white;
+}

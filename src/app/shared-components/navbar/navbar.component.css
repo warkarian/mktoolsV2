@@ -1,0 +1,133 @@
+
+header {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.navbar-collapse.collapse.show {
+  height: 100vh;
+}
+
+.navbar-nav {
+  height: 100vh;
+}
+
+.fixed-top {
+  min-height: 52px;
+  padding: 10px !important;
+  margin-bottom: 40px !important;
+}
+
+.header-container {
+  min-height: 23px;
+  padding: 10px 20px;
+}
+
+ul {
+  height: 100%;
+  padding: 0;
+}
+
+#navbarContent {
+  height: 100% !important;
+}
+
+li {
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+li a:hover {
+  color: rgb(151, 148, 132) !important;
+}
+
+li a {
+  cursor: pointer;
+  width: 100%;
+  color: rgb(247, 247, 247);
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 15px 20px;
+  letter-spacing: 2px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1em;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+}
+
+.activo {
+  color: #f56a65 !important;
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .navbar-collapse.collapse.show {
+    height: 52px;
+  }
+
+  .navbar-nav {
+    /*background: red!important;*/
+    height: 52px;
+  }
+
+  .fixed-top {
+    padding: 0 !important;
+  }
+
+
+  #navbarContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li > a {
+    width: inherit;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    padding: 0 7px!important;
+    letter-spacing: 1px;
+  }
+  .navbar-expand-md .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  li > a {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 18px!important;
+    letter-spacing: 1px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}

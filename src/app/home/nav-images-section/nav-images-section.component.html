@@ -1,0 +1,70 @@
+<div class="" #visualizarImagen>
+
+</div>
+
+<div class="container-fluid contenedor-productos">
+  <div class="row contenido-productos desktop">
+
+    <a [routerLink]="['/productos']">
+    <div class="card">
+      <div class="card-img-top">
+        <img src="../../../../assets/images/home/home-nav-productos.jpeg" alt="">
+      </div>
+      <div class="card-body body-productos">
+        <h5 class="card-title">PRODUCTOS</h5>
+      </div>
+    </div>
+    </a>
+
+    <div class="card">
+      <div class="card-img-top">
+        <img src="../../../../assets/images/home/home-nav-servicios.jpeg" alt="">
+      </div>
+      <div class="card-body body-servicios">
+        <h5 class="card-title">SERVICIOS</h5>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-top">
+        <img #imagen src="../../../../assets/images/home/home-nav-portafolio.jpeg" alt="">
+      </div>
+      <div class="card-body body-portafolio">
+        <h5 class="card-title">PORTAFOLIO</h5>
+      </div>
+    </div>
+
+  </div>
+  <div class="row contenido-productos mobile">
+
+    <a [routerLink]="['/productos']">
+    <div class="card 12-col">
+      <div class="card-img-top">
+        <img src="../../../../assets/images/home/home-nav-productos.jpeg" alt="">
+      </div>
+      <div class="card-body body-productos">
+        <h5 class="card-title">PRODUCTOS</h5>
+      </div>
+    </div>
+    </a>
+
+    <div class="card 12-col">
+      <div class="card-img-top">
+        <img src="../../../../assets/images/home/home-nav-servicios.jpeg" alt="">
+      </div>
+      <div class="card-body body-servicios">
+        <h5 class="card-title">SERVICIOS</h5>
+      </div>
+    </div>
+
+    <div class="card 12-col">
+      <div class="card-img-top">
+        <img #imagen src="../../../../assets/images/home/home-nav-portafolio.jpeg" alt="">
+      </div>
+      <div class="card-body body-portafolio">
+        <h5 class="card-title">PORTAFOLIO</h5>
+      </div>
+    </div>
+
+  </div>
+</div>
